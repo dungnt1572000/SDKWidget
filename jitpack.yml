@@ -1,0 +1,6 @@
+jdk:
+  - openjdk21
+before_install:
+  - yes | sdkmanager --licenses || true
+install:
+  - ./gradlew :sdk-widget:publishToMavenLocal

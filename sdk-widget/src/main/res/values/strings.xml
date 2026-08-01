@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="rw_widget_label">Retention Widget (XML)</string>
+    <string name="rw_widget_label_compose">Retention Widget (Compose)</string>
+    <string name="rw_widget_description">Keep your streak alive right from the home screen.</string>
+    <string name="rw_streak_format">🔥 %1$d day streak</string>
+</resources>

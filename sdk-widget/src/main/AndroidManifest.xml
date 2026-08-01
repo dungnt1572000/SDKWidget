@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application>
+        <!-- Home screen widget provider. Merged into the host app's manifest automatically. -->
+        <receiver
+            android:name="com.dungz.widgetsdk.RetentionWidgetProvider"
+            android:exported="false"
+            android:label="@string/rw_widget_label">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/rw_widget_info" />
+        </receiver>
+
+        <!-- Compose (Glance) flavor of the widget. -->
+        <receiver
+            android:name="com.dungz.widgetsdk.glance.RetentionGlanceReceiver"
+            android:exported="false"
+            android:label="@string/rw_widget_label_compose">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/rw_widget_info_compose" />
+        </receiver>
+
+        <!-- Receives the system confirmation after the user accepts the pin-widget dialog. -->
+        <receiver
+            android:name="com.dungz.widgetsdk.internal.PinResultReceiver"
+            android:exported="false" />
+    </application>
+
+</manifest>

@@ -1,0 +1,12 @@
+# Keep SDK public API and manifest-registered components for consumer apps.
+-keep class com.dungz.widgetsdk.RetentionWidgetProvider { *; }
+-keep class com.dungz.widgetsdk.glance.RetentionGlanceReceiver { *; }
+-keep class com.dungz.widgetsdk.glance.RetentionGlanceWidget { *; }
+-keep class com.dungz.widgetsdk.internal.PinResultReceiver { *; }
+-keep class com.dungz.widgetsdk.WidgetType { *; }
+-keep interface com.dungz.widgetsdk.WidgetXmlRenderer { *; }
+-keep class com.dungz.widgetsdk.RetentionWidgetSdk { public *; }
+-keep class com.dungz.widgetsdk.WidgetContent { *; }
+-keep class com.dungz.widgetsdk.WidgetClickEvent { *; }
+-keep class com.dungz.widgetsdk.WidgetClickSource { *; }
+-keep interface com.dungz.widgetsdk.RetentionWidgetCallback { *; }

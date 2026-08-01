@@ -4,7 +4,7 @@
 > Cả 2 dùng chung nội dung (`WidgetContent`) và chung callback. App có thể dùng UI mặc định của SDK hoặc tự truyền UI vào.
 
 - **Repo:** https://github.com/dungnt1572000/SDKWidget
-- **Dependency:** `com.github.dungnt1572000.SDKWidget:sdk-widget:1.0.0` (JitPack)
+- **Dependency:** `com.github.dungnt1572000:SDKWidget:1.0.0` (JitPack)
 - **minSdk:** 29 · **compileSdk yêu cầu:** 37
 
 ---
@@ -27,7 +27,7 @@ dependencyResolutionManagement {
 
 ```kotlin
 dependencies {
-    implementation("com.github.dungnt1572000.SDKWidget:sdk-widget:1.0.0")
+    implementation("com.github.dungnt1572000:SDKWidget:1.0.0")
 }
 ```
 
@@ -300,7 +300,7 @@ Riêng `setComposeContent` là Kotlin-only (lambda `@Composable`).
 ## 10. Checklist tích hợp
 
 - [ ] Thêm `maven("https://jitpack.io")` vào `settings.gradle.kts`
-- [ ] Thêm `implementation("com.github.dungnt1572000.SDKWidget:sdk-widget:1.0.0")`
+- [ ] Thêm `implementation("com.github.dungnt1572000:SDKWidget:1.0.0")`
 - [ ] `compileSdk = 37`, `minSdk >= 29`
 - [ ] Tạo `Application` class: `init` + `setCallback` (+ `setXmlRenderer`/`setComposeContent` nếu custom UI)
 - [ ] Activity nhận click: `launchMode="singleTop"` + gọi `consumeClickEvent` ở `onCreate` **và** `onNewIntent`
